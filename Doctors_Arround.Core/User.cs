@@ -7,11 +7,11 @@ namespace Doctors_Around.Core
 {
     public class User
     {
-        public string Full_Name { get; set; }
+        public string Full_Name { get; set; } //
         public AccountType accountType { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public string Phone_number { get; set; }
+        public string Password { get; set; } //
+        public string Email { get; set; } //
+        public string Phone_number { get; set; } //
         public List<string> Symptoms { get; set; }
         public List<string> Medicins { get; set; }
         public List<string> PreviousIllnesses { get; set; }
