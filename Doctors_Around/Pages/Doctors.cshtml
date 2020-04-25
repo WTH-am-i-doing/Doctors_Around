@@ -55,14 +55,15 @@
     <th>@doc.Full_Name</th>
     <th>@doc.Specialty</th>
     <th>@doc.Country , @doc.City - @doc.Full_Name</th>
-    @if (true || User.Identity.IsAuthenticated)
-    {
-<th>
-    <!--<a class="btn" href="#"> <i class="fas fa-edit"></i></a>-->
-    <a class="btn" href="#"><i class="fas fa-map-marked-alt"></i></a>
-    <a class="btn" href="#"><i class="fas fa-paper-plane"></i></a>
-</th>
-    }
+    
+    <th>
+        @if (true || User.Identity.IsAuthenticated)
+        {<!--<a class="btn" href="#"> <i class="fas fa-edit"></i></a>-->
+            <a class="btn" href="#"><i class="fas fa-map-marked-alt"></i></a>
+            <a class="btn" href="#"><i class="fas fa-paper-plane"></i></a>
+        }
+    </th>
+    
 </tr>
     }
 </table>
