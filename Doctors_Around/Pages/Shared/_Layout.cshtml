@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-    <header class="border-bottom box-shadow bg-light">
+    <header class="border-bottom box-shadow bg-random">
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-light bg-random" >
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Doctors Around</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -50,13 +50,13 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <div class="container mt-2">
         <main role="main" class="pb-3 container">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer mt-1 text-muted">
         <div class="container">
             &copy; 2020 - Doctors Around 
         </div>
