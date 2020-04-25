@@ -15,12 +15,13 @@ namespace Doctors_Around.Pages.User
             City = "Algiers",
             Country = "Algeria",
             Email = "Riad@Fentazi.net",
-            Full_Adress = "Nobody Cares But Anyway"
+            Full_Adress = "Nobody Cares",
+            Medicins=new List<string>() {"Fantamine","Randomine","Crapamine" },
+            Password="Crap",
+            Phone_number="None",
+            PreviousIllnesses=new List<string>() { "Cold","Random" },
+            Symptoms=new List<string>() { "Coughing", "Hard Breathing","Sucking"}            
         };
-        public PatientModel()
-        {
-
-        }
         public void OnGet()
         {
 
