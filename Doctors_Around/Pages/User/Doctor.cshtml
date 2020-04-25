@@ -4,5 +4,64 @@
     ViewData["Title"] = "Doctor";
 }
 
-<h1>Doctor</h1>
+    <div class="row border rounded">
+        @if (Model.doc.accountType == Core.AccountType.Clinic)
+        {
+            <i class="fas fa-clinic-medical"></i>
+        }
+        else if (Model.doc.accountType == Core.AccountType.Doctor)
+        {
+            <i class="fas fa-user-md"></i>
+        }
+        else
+        {
+            <i class="fas fa-hospital"></i>
+        }
+        <h2>@Model.doc.Full_Name</h2>
+    </div>
+    <div class="row border rounded">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Symptoms</th>
+                    <th scope="col">Medicins</th>
+                    <th scope="col">Previous Illnesses</th>
+                    <th scope="col">Response</th>
+                </tr>
+            </thead>
+            @foreach (Core.Case c in Model.doc.RequestedCases)
+            {
+        <tr>
+            <th>
+                @c.Patient_Name
+            </th>
+            <th>
+                <p>
+                    @foreach (string symp in c.Symptoms)
+                    {
+                        @symp <small>,</small>
+                    }
+                </p>
+            </th>
+            <th>
+                <p>
+                    @foreach (string med in c.Medicins)
+                    {
+                        @med <small>,</small>
+                    }
+                </p>
+            </th>
+            <th>
+                <p>
+                    @foreach (string ill in c.PreviousIllnesses)
+                    {
+                        @ill <small>,</small>
+                    }
+                </p>
+            </th>
 
+        </tr>
+            }
+        </table>
+    </div>
