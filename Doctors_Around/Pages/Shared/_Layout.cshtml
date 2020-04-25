@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-
     <header class="border-bottom box-shadow bg-light">
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -23,16 +22,30 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="">Doctors</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="">Doctors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="">Patient</a>
-                        </li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <!--Check if User is Doctor And Show This :-->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="">Requests</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="">Doctors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="">Patient</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </nav>
