@@ -20,8 +20,31 @@
                         <label class="form-check-label" for="exampleCheck1">Stay logged in</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block" >Log in</button>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#staticBackdrop">
+                        Sign Up
+                    </button>
                 </form>
             </section>
         </section> 
 </section>    
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog text-left" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Choose The Sign Up Type
+            </div>
+            <div class="modal-footer justify-content-start">
+                <a class="btn border" asp-page="/User/RegisterDoc">Doctor / Clinic / Hospital</a>
+                <a class="btn border" asp-page="/User/RegisterUser">Patient</a>
+            </div>
+        </div>
+    </div>
+</div>
     
