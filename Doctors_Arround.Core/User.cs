@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Text;
 
@@ -7,10 +8,14 @@ namespace Doctors_Around.Core
 {
     public class User
     {
+        [Required]
         public string Full_Name { get; set; } //
         public AccountType accountType { get; set; }
+        [Required]
         public string Password { get; set; } //
+        [Required]
         public string Email { get; set; } //
+        [Required]
         public string Phone_number { get; set; } //
         public List<string> Symptoms { get; set; }
         public List<string> Medicins { get; set; }
