@@ -1,4 +1,4 @@
-﻿using Doctors_Arround.Core;
+﻿using Doctors_Around.Core;
 using Firebase.Database;
 using Firebase.Database.Query;
 using System;
@@ -7,14 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Doctors_Arround.Data
+namespace Doctors_Around.Data
 {
-    class IFirebaseLoginHelper
+    public class IFirebaseLoginHelper
     {
         FirebaseClient firebase = new FirebaseClient("https://doctors-around.firebaseio.com/");
-        public class FirebaseHelper
-        {
-            FirebaseClient firebase = new FirebaseClient("https://xamarinfirebase-909d2.firebaseio.com/");
 
             public async Task<List<User>> GetAllPersons()
             { 
@@ -77,5 +74,5 @@ namespace Doctors_Arround.Data
         }
 
     }
-}
-}
+
+

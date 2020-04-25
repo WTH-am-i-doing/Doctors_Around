@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Doctors_Arround.Core
+namespace Doctors_Around.Core
 {
     public class User
     {

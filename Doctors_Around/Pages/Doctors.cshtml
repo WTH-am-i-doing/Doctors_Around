@@ -4,5 +4,28 @@
     ViewData["Title"] = "Doctors";
 }
 
-<h1>Doctors</h1>
 
+<h1>Doctors</h1>
+<table class="table">
+    @foreach (var doc in Model.Doctors)
+    {
+        <tr>
+            <th>
+                @if (doc.accountType == Core.AccountType.Clinic)
+                {
+                    <i class="fas fa-clinic-medical"></i>
+                }
+                else if (doc.accountType == Core.AccountType.Doctor)
+                {
+                    <i class="fas fa-user-md"></i>
+                }
+                else
+                {
+                    <i class="fas fa-hospital"></i>                
+                }
+            </th>
+            <th>@doc.Full_Name</th>
+        </tr>
+    }
+</table>
+<button type="submit">New User</button>

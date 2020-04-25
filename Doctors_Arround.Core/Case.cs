@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Doctors_Arround.Core
+namespace Doctors_Around.Core
 {
     public class Case
     {

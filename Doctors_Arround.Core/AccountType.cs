@@ -1,4 +1,4 @@
-﻿namespace Doctors_Arround.Core
+﻿namespace Doctors_Around.Core
 {
     public enum AccountType
     {

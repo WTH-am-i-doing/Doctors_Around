@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors_Around", "Doctors_Around\Doctors_Around.csproj", "{877129FA-D3A7-4511-956B-3F6B82832B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors_Arround.Core", "Doctors_Arround.Core\Doctors_Arround.Core.csproj", "{26E75123-5C3E-4B57-BF47-59FCFAE1A2AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors_Around.Core", "Doctors_Arround.Core\Doctors_Around.Core.csproj", "{26E75123-5C3E-4B57-BF47-59FCFAE1A2AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors_Arround.Data", "Doctors_Arround.Data\Doctors_Arround.Data.csproj", "{6B063A33-D883-4F49-883C-8C2B7974C79A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors_Around.Data", "Doctors_Arround.Data\Doctors_Around.Data.csproj", "{6B063A33-D883-4F49-883C-8C2B7974C79A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
