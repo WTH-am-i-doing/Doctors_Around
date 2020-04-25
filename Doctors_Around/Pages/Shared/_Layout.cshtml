@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-    <header class="border-bottom box-shadow bg-random">
+    <header class=" box-shadow bg-info">
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-random" >
+            <nav class="navbar navbar-expand-sm navbar-dark bg-info" >
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Doctors Around</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav flex-grow-1 mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Doctors">Doctors</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Doctors">Doctors</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -32,17 +32,17 @@
                         {
                             <!--Check if User is Doctor And Show This :-->
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="">Requests</a>
+                                <a class="nav-link text-light" asp-area="" asp-page="">Requests</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="">Logout</a>
+                                <a class="nav-link text-light" asp-area="" asp-page="">Logout</a>
                             </li>
                         }
                         else
                         {
                             <!--Check Account Type And Show One Of These Depending On It-->
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/User/Login">Login</a>
+                                <a class="nav-link text-light" asp-area="" asp-page="/User/Login">Login</a>
                             </li>
                         }
                     </ul>
@@ -57,7 +57,7 @@
     </div>
 
     <footer class="border-top footer mt-1 text-muted">
-        <div class="container">
+        <div class="container text-light">
             &copy; 2020 - Doctors Around 
         </div>
     </footer>

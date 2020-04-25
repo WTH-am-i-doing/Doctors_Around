@@ -61,9 +61,10 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: url('/img/bckg.jpg');
+    background-image: url('/img/bcg.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
+    background-size:cover;
     
 }
 .footer {
