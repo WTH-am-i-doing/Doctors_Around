@@ -3,87 +3,52 @@
 @{
     ViewData["Title"] = "RegisterUser";
 }
+<h1>Registration Patient </h1>
 
-<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-    <div class="wrapper wrapper--w680">
-        <div class="card card-4">
-            <div class="card-body">
-                <h2 class="title">Registration Form</h2>
-                <form method="POST">
-                    <div class="row row-space">
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">first name</label>
-                                <input class="input--style-4" type="text" name="first_name">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">last name</label>
-                                <input class="input--style-4" type="text" name="last_name">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-space">
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">Birthday</label>
-                                <div class="input-group-icon">
-                                    <input class="input--style-4 js-datepicker" type="text" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">Gender</label>
-                                <div class="p-t-10">
-                                    <label class="radio-container m-r-45">
-                                        Male
-                                        <input type="radio" checked="checked" name="gender">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radio-container">
-                                        Female
-                                        <input type="radio" name="gender">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-space">
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">Email</label>
-                                <input class="input--style-4" type="email" name="email">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="input-group">
-                                <label class="label">Phone Number</label>
-                                <input class="input--style-4" type="text" name="phone">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label class="label">Subject</label>
-                        <div class="rs-select2 js-select-simple select--no-search">
-                            <select name="subject">
-                                <option disabled="disabled" selected="selected">Choose option</option>
-                                <option>Subject 1</option>
-                                <option>Subject 2</option>
-                                <option>Subject 3</option>
-                            </select>
-                            <div class="select-dropdown"></div>
-                        </div>
-                    </div>
-                    <div class="p-t-15">
-                        <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="probably_your_name@something.probably_com">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Shuu it's a secret">
         </div>
     </div>
-</div>
-<a asp-page="/User/Login">Already Have An Account</a>
+    <div class="form-group">
+        <label for="inputAddress">Full Name</label>
+        <input type="text" class="form-control" id="inputAddress">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Address</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="just ask your parents if you forgot it or just google it">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+                <option selected>Get your state here!</option>
+                <option> 404 states not found here look up again</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="some number">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Do I agree all the stuff that I haven't red (DEFENETLY!)
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    <a class="btn btn-success float-right" asp-area="" asp-page="/User/Login" >Already have an accunt? Why don't you log in!</a>
+</form>
