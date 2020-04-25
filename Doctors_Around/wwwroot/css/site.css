@@ -56,12 +56,15 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
-  background-image: url('~/img/bckg.jpg');
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('/img/bckg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 .footer {
   position: absolute;
