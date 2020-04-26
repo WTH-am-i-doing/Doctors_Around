@@ -28,19 +28,15 @@
                     </ul>
                     <ul class="navbar-nav">
 
-                        @if (User.Identity.IsAuthenticated)
+                        @if ( User.Identity.IsAuthenticated)
                         {
                             <!--Check if User is Doctor And Show This :-->
-                            <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-page="">Requests</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" asp-page="">Logout</a>
                             </li>
                         }
                         else
-                        {
-                            <!--Check Account Type And Show One Of These Depending On It-->
+                        {                             <!--Check Account Type And Show One Of These Depending On It-->
                             <li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" asp-page="/User/Login">Login</a>
                             </li>

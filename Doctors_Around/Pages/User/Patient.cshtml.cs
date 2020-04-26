@@ -14,13 +14,13 @@ namespace Doctors_Around.Pages.User
             accountType = Core.AccountType.Patient,
             City = "Algiers",
             Country = "Algeria",
-            Email = "Riad@Fentazi.net",
+            Email = "Riad@gmail.com",
             Full_Adress = "Nobody Cares",
-            Medicins=new List<string>() {"Fantamine","Randomine","Crapamine" },
-            Password="Crap",
+            Medicins=new List<string>() {"Vitamines","Catalgine","Androstanolone valerate"},
+            Password="password",
             Phone_number="None",
-            PreviousIllnesses=new List<string>() { "Cold","Random" },
-            Symptoms=new List<string>() { "Coughing", "Hard Breathing","Sucking"}            
+            PreviousIllnesses=new List<string>() { "Cold","Fever" },
+            Symptoms=new List<string>() { "Coughing", "Hard Breathing"}            
         };
         public void OnGet()
         {

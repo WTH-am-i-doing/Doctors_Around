@@ -11,7 +11,7 @@ namespace Doctors_Around.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public string[] Advices = {"KYS","Stay At Home","Cyka" ,"Random Advice Number 3","Generic Advice Number 4" };
+        public string[] Advices = {"Don't Touch Stuff Barehanded It Can Containt Anything","Stay At Home, Stay Safe","Think About The People You Can Hurt If You Get The Illness" ,"Clean Your Hand Always","If You Think You Have The Symptoms Go To The Nearest Hospital To Get Checked And Take Safety Measures" };
         public string advice;
 
         public IndexModel(ILogger<IndexModel> logger)
