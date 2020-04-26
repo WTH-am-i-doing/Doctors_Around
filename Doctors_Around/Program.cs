@@ -14,7 +14,7 @@ namespace Doctors_Around
     {
         public static void Main(string[] args)
         {
-            MongoCR db = new MongoCR("");
+            MongoCRUD db = new MongoCRUD("DoctorsAround");
             db.InsertRecord("Users", "our object");
             CreateHostBuilder(args).Build().Run();
         }
@@ -26,11 +26,11 @@ namespace Doctors_Around
                 });
     }
 
-    public class MongoCR
+    public class MongoCRUD
     {
         private IMongoDatabase db;
 
-        public MongoCR(string database)
+        public MongoCRUD(string database)
         {
             var client = new MongoClient();
             db = client.GetDatabase(database);
