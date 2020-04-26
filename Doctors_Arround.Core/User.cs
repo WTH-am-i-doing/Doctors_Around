@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
@@ -8,8 +9,9 @@ namespace Doctors_Around.Core
 {
     public class User
     {
+        [BsonId]
         public static int max_id;
-        public int id { get; set; }
+        public Guid id { get; set; }
         [Required]
         public string Full_Name { get; set; } //
         public AccountType accountType { get; set; }
