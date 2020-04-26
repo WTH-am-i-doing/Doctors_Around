@@ -8,6 +8,8 @@ namespace Doctors_Around.Core
 {
     public class User
     {
+        public static int max_id;
+        public int id { get; set; }
         [Required]
         public string Full_Name { get; set; } //
         public AccountType accountType { get; set; }
