@@ -22,7 +22,9 @@
                     </li>
                 }
             </ul>
-            <a class="btn btn-secondary" href="#">Add Symptom</a>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter1">
+                Add Symptom
+            </button>
         </div>
         <div class="col-sm">
             <h2>Medicins</h2>
@@ -32,7 +34,9 @@
                     <li class="list-group-item p-2 text-center"><i class="fas fa-pills"></i> @medic</li>
                 }
             </ul>
-            <a class="btn btn-secondary" href="#">Add Medicin</a>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter2">
+                Add Medicin
+            </button>
         </div>
         <div class="col-sm">
             <h2>Previous Illnesses</h2>
@@ -42,7 +46,66 @@
                     <li class="list-group-item p-3 text-center">@illn</li>
                 }
             </ul>
-            <a class="btn btn-secondary" href="#">Add Illness</a>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter3">
+                Add Previous Illness
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Add Symptoms</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" type="text" placeholder="Coughing, Head-Ackes ??" />
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary">Add Symptom</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Add Medicin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" type="text" placeholder="Medicin ..."/>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <a class="btn btn-primary">Add Medicin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Add Previous Illness</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" type="text" placeholder="Ex : Fever">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add Previous Illness</button>
+            </div>
         </div>
     </div>
 </div>
