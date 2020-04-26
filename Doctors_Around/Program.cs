@@ -16,7 +16,8 @@ namespace Doctors_Around
         public static void Main(string[] args)
         {
             MongoCRUD db = new MongoCRUD("DoctorsAround");
-            db.InsertRecord("Users",new Core.User() {Full_Adress="Random" });
+            //db.InsertRecord("Users",new Core.User() {Full_Adress="Random" });
+            
             CreateHostBuilder(args).Build().Run();
         }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -41,6 +42,11 @@ namespace Doctors_Around
         {
             var collection = db.GetCollection<User>(table);
             collection.InsertOne(record);
+        }
+        public void RemoveRecord(string table,Guid id)
+        {
+            var collection = db.GetCollection<User>(table);
+
         }
     }
 }
