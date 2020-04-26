@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Doctors_Around.Core;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -15,7 +16,7 @@ namespace Doctors_Around
         public static void Main(string[] args)
         {
             MongoCRUD db = new MongoCRUD("DoctorsAround");
-            db.InsertRecord("Users", "our object");
+            db.InsertRecord("Users",new Core.User() {Full_Adress="Random" });
             CreateHostBuilder(args).Build().Run();
         }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -36,9 +37,9 @@ namespace Doctors_Around
             db = client.GetDatabase(database);
         }
 
-        public void InsertRecord<T>(string table, T record)
+        public void InsertRecord<User>(string table, User record)
         {
-            var collection = db.GetCollection<T>(table);
+            var collection = db.GetCollection<User>(table);
             collection.InsertOne(record);
         }
     }
